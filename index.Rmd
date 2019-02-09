@@ -1,0 +1,20 @@
+---
+title: "Evictions Report"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+knitr::opts_chunk$set(echo = F)
+source("analysis.R")
+```
+
+## R Markdown
+
+This report focuses on evictions in SF. The datased contained `r num_evictions` of eviction notices.
+
+## Month code analysis
+
+```{r}
+monthplot
+```
